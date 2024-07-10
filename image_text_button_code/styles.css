@@ -1,0 +1,189 @@
+:root {
+    --primary-color: #E21B70;
+    --primary-neutral: #333333;
+    --secondary-neutral: #707070;
+    --white: #ffffff;
+    --headline-font-size: 24px;
+    --h2-font-size: 14px;
+    --p-font-size: 10px;
+    --headline-line-height: 28px;
+    --h2-line-height: 16px;
+    --p-line-height: 11px;
+    --headline-weight: 700;
+    --h2-weight: 400;
+    --h2-space: -0.015px;
+    --p-space: 0.12px;
+
+    --code-font-size: 14px;
+    --code-line-height: 16px;
+    --code-letter-spacing: -0.15px;
+    --modal-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.24);
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url('https://braze-images.com/appboy/communication/assets/font_assets/files/668e7017650b090063bf6ae3/original.otf?1720610839') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SF Pro";
+    src: url(./fonts/SF-Pro-Text-Light.otf) format("opentype");
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Arandir";
+    src: url('https://braze-images.com/appboy/communication/assets/font_assets/files/668e70162c3f1a00582545d1/original.otf?1720610838') format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Arandir";
+    src: url('https://braze-images.com/appboy/communication/assets/font_assets/files/668e701662847c0058a18f76/original.otf?1720610838') format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+body {
+    font-family: "SF Pro";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.message-container {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--modal-shadow);
+    width: 327px;
+    text-align: center;
+    position: relative;
+}
+
+.header {
+    padding: 24px 24px 24px 24px;
+    position: relative;
+}
+
+.button-close {
+    height: 16px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    z-index: 99;
+}
+
+.headline_container {
+    display: flex;
+    padding: 16px 24px 16px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+
+}
+
+.headline-text {
+    font-family: "Arandir";
+    font-size: var(--headline-font-size);
+    font-weight: var(--headline-weight);
+    font-feature-settings: 'salt' on;
+
+}
+
+.message-image img {
+    width: 100%;
+    height: 325.25px;
+}
+
+img {
+    margin: 0;
+   
+    padding: 0;
+
+}
+
+.message-body {
+    padding-top: 16px;
+}
+
+.body-heading {
+    font-family: "SF Pro";
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-weight);
+    line-height: var(--h2-line-height);
+    letter-spacing: var(--h2-space);
+    padding-bottom: 16px;
+  
+
+}
+.body-heading p{
+   margin: 0;
+}
+
+.body-paragraph {
+    font-family: "SF Pro";
+    font-size: var(--p-font-size);
+    font-weight: var(--h2-weight);
+    line-height: var(--p-line-height);
+    letter-spacing: var(--p-space);
+    color: var(--secondary-neutral);
+    padding: 0px 40px;
+
+}
+
+.message-footer {
+    padding: 24px 24px 32px 24px;
+}
+
+.primary-button {
+    background: var(--primary-color);
+    color: var(--white);
+    height: 48px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.15px;
+    width: 100%;
+}
+
+.message-body p {
+    margin: 0;
+
+}
+.code-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.code-frame svg {
+    margin-right: 8px;
+}
+
+.code-text {
+    display: flex;
+    align-items: center;
+    font-family: "SF Pro";
+    font-size: var(--code-font-size);
+    font-weight: var(--headline-weight);
+    color: var(--primary-neutral);
+
+}
+
+.code-text span:first-child {
+    margin-right: 8px;
+    font-weight: var(--h2-weight);
+}
