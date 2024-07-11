@@ -3,12 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In-App Message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>In-App Message with Slides</title>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    
+    <div class="message-container">
+        <div class="header">
+            <div class="button-close" id="btn-close">
+                <a href="appboy://close"><img src="https://braze-images.com/appboy/communication/assets/svg_assets/files/668e70f3d74fef00594c760a/original.svg?1720611058" alt="Close Button"></a>
+            </div>      
+        </div>
+        <div class="headline_container">
+            <div class="headline-text">Header text</div>
+        </div>
+        <div class="message-image">
+            <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/668e70f36eff9f005a67e9f7/original.png?1720611059" alt="Placeholder Image">
+        </div>
+        <div class="message-body">
+            <p class="body-heading">Body text that can be simple or very long paragraph text that looks like this.</p>
+            <p class="body-paragraph">Body text that can be simple or very long paragraph text that looks like this.</p>
+        </div>
+        <div class="message-footer">
+            <button class="primary-button">Primary button</button>
+        </div>
+    </div>
+    <div style="padding-right: 30px;"></div>
     <div class="message-container">
         <div class="header">
             <div class="button-close" id="btn-close">
@@ -49,6 +75,193 @@
             <button class="primary-button">Primary button</button>
         </div>
     </div>
+    <div style="padding-right: 30px;"></div>
+
+    <div class="message-container">
+        <div class="header">
+            <div class="button-close" id="btn-close">
+                <a href="appboy://close"><img src="https://braze-images.com/appboy/communication/assets/svg_assets/files/668e70f3d74fef00594c760a/original.svg?1720611058" alt="Close Button"></a>
+            </div>      
+        </div>
+        <div class="slick-container">
+            <div class="slick-slide">
+                <div class="headline_container">
+                    <div class="headline-text">Header text</div>
+                </div>
+                <div class="message-image">
+                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/668e70f36eff9f005a67e9f7/original.png?1720611059" alt="Placeholder Image">
+                </div>
+                <div class="message-body">
+                    <p class="body-heading">Body text that can be simple or very long paragraph text that looks like this.</p>
+                    <div class="code-frame"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="157" height="42"
+                            viewBox="0 0 157 42" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 9.25C0.5 4.83172 4.08172 1.25 8.5 1.25H148.5C152.918 1.25 156.5 4.83172 156.5 9.25V15.3325C155.209 15.8075 154.225 18.276 154.225 21.25C154.225 24.224 155.209 26.6925 156.5 27.1675V33.25C156.5 37.6683 152.918 41.25 148.5 41.25H8.5C4.08172 41.25 0.5 37.6683 0.5 33.25V27.1656C1.78874 26.6861 2.77022 24.2201 2.77022 21.25C2.77022 18.2799 1.78874 15.8139 0.5 15.3344V9.25Z"
+                                fill="white" />
+                            <path
+                                d="M156.5 15.3325L156.673 15.8018L157 15.6813V15.3325H156.5ZM156.5 27.1675H157V26.8187L156.673 26.6982L156.5 27.1675ZM0.5 27.1656L0.32563 26.697L0 26.8182V27.1656H0.5ZM0.5 15.3344H0V15.6818L0.32563 15.803L0.5 15.3344ZM8.5 0.75C3.80558 0.75 0 4.55558 0 9.25H1C1 5.10786 4.35786 1.75 8.5 1.75V0.75ZM148.5 0.75H8.5V1.75H148.5V0.75ZM157 9.25C157 4.55558 153.194 0.75 148.5 0.75V1.75C152.642 1.75 156 5.10787 156 9.25H157ZM157 15.3325V9.25H156V15.3325H157ZM154.725 21.25C154.725 19.8138 154.963 18.5162 155.344 17.5353C155.737 16.5255 156.234 15.9629 156.673 15.8018L156.327 14.8632C155.474 15.177 154.834 16.0862 154.412 17.173C153.979 18.2886 153.725 19.7123 153.725 21.25H154.725ZM156.673 26.6982C156.234 26.5371 155.737 25.9745 155.344 24.9647C154.963 23.9838 154.725 22.6862 154.725 21.25H153.725C153.725 22.7877 153.979 24.2114 154.412 25.327C154.834 26.4138 155.474 27.323 156.327 27.6368L156.673 26.6982ZM157 33.25V27.1675H156V33.25H157ZM148.5 41.75C153.194 41.75 157 37.9444 157 33.25H156C156 37.3921 152.642 40.75 148.5 40.75V41.75ZM8.5 41.75H148.5V40.75H8.5V41.75ZM0 33.25C0 37.9444 3.80558 41.75 8.5 41.75V40.75C4.35786 40.75 1 37.3921 1 33.25H0ZM0 27.1656V33.25H1V27.1656H0ZM2.27022 21.25C2.27022 22.6843 2.03262 23.9804 1.65224 24.9609C1.26074 25.9701 0.763807 26.534 0.32563 26.697L0.67437 27.6342C1.52493 27.3177 2.16311 26.4089 2.58454 25.3226C3.01709 24.2077 3.27022 22.7857 3.27022 21.25H2.27022ZM0.32563 15.803C0.763807 15.966 1.26074 16.5299 1.65224 17.5391C2.03262 18.5196 2.27022 19.8157 2.27022 21.25H3.27022C3.27022 19.7143 3.01709 18.2923 2.58454 17.1774C2.16311 16.0911 1.52493 15.1823 0.67437 14.8658L0.32563 15.803ZM0 9.25V15.3344H1V9.25H0Z"
+                                fill="#C5CFD1" />
+                            <text x="10" y="25" font-family="SF Pro" font-size="14" font-weight="700" fill="#333333">Code</text>
+                            <svg x="55" y="0" xmlns="http://www.w3.org/2000/svg" width="1" height="49" viewBox="0 0 1 41"
+                                fill="none">
+                                <path d="M0.5 0.25V40.25" stroke="#C5CFD1" stroke-dasharray="4 4" />
+                            </svg>
+                            <text x="60" y="25" font-family="SF Pro" font-size="14" font-weight="700"
+                                fill="#333333">PANDADEAL</text>
+                        </svg>
+                    </div>
+                    <p class="body-paragraph">Body text that can be simple or very long paragraph text that looks like this.</p>
+                </div>
+                <div class="message-footer">
+                    <button class="primary-button">Primary button</button>
+                </div>
+            </div>
+            <div class="slick-slide">
+                <div class="headline_container">
+                    <div class="headline-text">Header text</div>
+                </div>
+                <div class="message-image">
+                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/668e70f36eff9f005a67e9f7/original.png?1720611059" alt="Placeholder Image">
+                </div>
+                <div class="message-body">
+                    <p class="body-heading">Body text that can be simple or very long paragraph text that looks like this.</p>
+                    <div class="code-frame"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="157" height="42"
+                            viewBox="0 0 157 42" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 9.25C0.5 4.83172 4.08172 1.25 8.5 1.25H148.5C152.918 1.25 156.5 4.83172 156.5 9.25V15.3325C155.209 15.8075 154.225 18.276 154.225 21.25C154.225 24.224 155.209 26.6925 156.5 27.1675V33.25C156.5 37.6683 152.918 41.25 148.5 41.25H8.5C4.08172 41.25 0.5 37.6683 0.5 33.25V27.1656C1.78874 26.6861 2.77022 24.2201 2.77022 21.25C2.77022 18.2799 1.78874 15.8139 0.5 15.3344V9.25Z"
+                                fill="white" />
+                            <path
+                                d="M156.5 15.3325L156.673 15.8018L157 15.6813V15.3325H156.5ZM156.5 27.1675H157V26.8187L156.673 26.6982L156.5 27.1675ZM0.5 27.1656L0.32563 26.697L0 26.8182V27.1656H0.5ZM0.5 15.3344H0V15.6818L0.32563 15.803L0.5 15.3344ZM8.5 0.75C3.80558 0.75 0 4.55558 0 9.25H1C1 5.10786 4.35786 1.75 8.5 1.75V0.75ZM148.5 0.75H8.5V1.75H148.5V0.75ZM157 9.25C157 4.55558 153.194 0.75 148.5 0.75V1.75C152.642 1.75 156 5.10787 156 9.25H157ZM157 15.3325V9.25H156V15.3325H157ZM154.725 21.25C154.725 19.8138 154.963 18.5162 155.344 17.5353C155.737 16.5255 156.234 15.9629 156.673 15.8018L156.327 14.8632C155.474 15.177 154.834 16.0862 154.412 17.173C153.979 18.2886 153.725 19.7123 153.725 21.25H154.725ZM156.673 26.6982C156.234 26.5371 155.737 25.9745 155.344 24.9647C154.963 23.9838 154.725 22.6862 154.725 21.25H153.725C153.725 22.7877 153.979 24.2114 154.412 25.327C154.834 26.4138 155.474 27.323 156.327 27.6368L156.673 26.6982ZM157 33.25V27.1675H156V33.25H157ZM148.5 41.75C153.194 41.75 157 37.9444 157 33.25H156C156 37.3921 152.642 40.75 148.5 40.75V41.75ZM8.5 41.75H148.5V40.75H8.5V41.75ZM0 33.25C0 37.9444 3.80558 41.75 8.5 41.75V40.75C4.35786 40.75 1 37.3921 1 33.25H0ZM0 27.1656V33.25H1V27.1656H0ZM2.27022 21.25C2.27022 22.6843 2.03262 23.9804 1.65224 24.9609C1.26074 25.9701 0.763807 26.534 0.32563 26.697L0.67437 27.6342C1.52493 27.3177 2.16311 26.4089 2.58454 25.3226C3.01709 24.2077 3.27022 22.7857 3.27022 21.25H2.27022ZM0.32563 15.803C0.763807 15.966 1.26074 16.5299 1.65224 17.5391C2.03262 18.5196 2.27022 19.8157 2.27022 21.25H3.27022C3.27022 19.7143 3.01709 18.2923 2.58454 17.1774C2.16311 16.0911 1.52493 15.1823 0.67437 14.8658L0.32563 15.803ZM0 9.25V15.3344H1V9.25H0Z"
+                                fill="#C5CFD1" />
+                            <text x="10" y="25" font-family="SF Pro" font-size="14" font-weight="700" fill="#333333">Code</text>
+                            <svg x="55" y="0" xmlns="http://www.w3.org/2000/svg" width="1" height="49" viewBox="0 0 1 41"
+                                fill="none">
+                                <path d="M0.5 0.25V40.25" stroke="#C5CFD1" stroke-dasharray="4 4" />
+                            </svg>
+                            <text x="60" y="25" font-family="SF Pro" font-size="14" font-weight="700"
+                                fill="#333333">PANDADEAL</text>
+                        </svg>
+                    </div>
+                    <p class="body-paragraph">Body text that can be simple or very long paragraph text that looks like this.</p>
+                </div>
+                <div class="message-footer">
+                    <button class="primary-button">Primary button</button>
+                </div>
+            </div>
+            <div class="slick-slide">
+                <div class="headline_container">
+                    <div class="headline-text">Header text</div>
+                </div>
+                <div class="message-image">
+                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/668e70f36eff9f005a67e9f7/original.png?1720611059" alt="Placeholder Image">
+                </div>
+                <div class="message-body">
+                    <p class="body-heading">Body text that can be simple or very long paragraph text that looks like this.</p>
+                    <div class="code-frame"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="157" height="42"
+                            viewBox="0 0 157 42" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 9.25C0.5 4.83172 4.08172 1.25 8.5 1.25H148.5C152.918 1.25 156.5 4.83172 156.5 9.25V15.3325C155.209 15.8075 154.225 18.276 154.225 21.25C154.225 24.224 155.209 26.6925 156.5 27.1675V33.25C156.5 37.6683 152.918 41.25 148.5 41.25H8.5C4.08172 41.25 0.5 37.6683 0.5 33.25V27.1656C1.78874 26.6861 2.77022 24.2201 2.77022 21.25C2.77022 18.2799 1.78874 15.8139 0.5 15.3344V9.25Z"
+                                fill="white" />
+                            <path
+                                d="M156.5 15.3325L156.673 15.8018L157 15.6813V15.3325H156.5ZM156.5 27.1675H157V26.8187L156.673 26.6982L156.5 27.1675ZM0.5 27.1656L0.32563 26.697L0 26.8182V27.1656H0.5ZM0.5 15.3344H0V15.6818L0.32563 15.803L0.5 15.3344ZM8.5 0.75C3.80558 0.75 0 4.55558 0 9.25H1C1 5.10786 4.35786 1.75 8.5 1.75V0.75ZM148.5 0.75H8.5V1.75H148.5V0.75ZM157 9.25C157 4.55558 153.194 0.75 148.5 0.75V1.75C152.642 1.75 156 5.10787 156 9.25H157ZM157 15.3325V9.25H156V15.3325H157ZM154.725 21.25C154.725 19.8138 154.963 18.5162 155.344 17.5353C155.737 16.5255 156.234 15.9629 156.673 15.8018L156.327 14.8632C155.474 15.177 154.834 16.0862 154.412 17.173C153.979 18.2886 153.725 19.7123 153.725 21.25H154.725ZM156.673 26.6982C156.234 26.5371 155.737 25.9745 155.344 24.9647C154.963 23.9838 154.725 22.6862 154.725 21.25H153.725C153.725 22.7877 153.979 24.2114 154.412 25.327C154.834 26.4138 155.474 27.323 156.327 27.6368L156.673 26.6982ZM157 33.25V27.1675H156V33.25H157ZM148.5 41.75C153.194 41.75 157 37.9444 157 33.25H156C156 37.3921 152.642 40.75 148.5 40.75V41.75ZM8.5 41.75H148.5V40.75H8.5V41.75ZM0 33.25C0 37.9444 3.80558 41.75 8.5 41.75V40.75C4.35786 40.75 1 37.3921 1 33.25H0ZM0 27.1656V33.25H1V27.1656H0ZM2.27022 21.25C2.27022 22.6843 2.03262 23.9804 1.65224 24.9609C1.26074 25.9701 0.763807 26.534 0.32563 26.697L0.67437 27.6342C1.52493 27.3177 2.16311 26.4089 2.58454 25.3226C3.01709 24.2077 3.27022 22.7857 3.27022 21.25H2.27022ZM0.32563 15.803C0.763807 15.966 1.26074 16.5299 1.65224 17.5391C2.03262 18.5196 2.27022 19.8157 2.27022 21.25H3.27022C3.27022 19.7143 3.01709 18.2923 2.58454 17.1774C2.16311 16.0911 1.52493 15.1823 0.67437 14.8658L0.32563 15.803ZM0 9.25V15.3344H1V9.25H0Z"
+                                fill="#C5CFD1" />
+                            <text x="10" y="25" font-family="SF Pro" font-size="14" font-weight="700" fill="#333333">Code</text>
+                            <svg x="55" y="0" xmlns="http://www.w3.org/2000/svg" width="1" height="49" viewBox="0 0 1 41"
+                                fill="none">
+                                <path d="M0.5 0.25V40.25" stroke="#C5CFD1" stroke-dasharray="4 4" />
+                            </svg>
+                            <text x="60" y="25" font-family="SF Pro" font-size="14" font-weight="700"
+                                fill="#333333">PANDADEAL</text>
+                        </svg>
+                    </div>
+                    <p class="body-paragraph">Body text that can be simple or very long paragraph text that looks like this.</p>
+                </div>
+                <div class="message-footer">
+                    <button class="primary-button">Primary button</button>
+                </div>
+            </div>
+            <div class="slick-slide">
+                <div class="headline_container">
+                    <div class="headline-text">Header text</div>
+                </div>
+                <div class="message-image">
+                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/668e70f36eff9f005a67e9f7/original.png?1720611059" alt="Placeholder Image">
+                </div>
+                <div class="message-body">
+                    <p class="body-heading">Body text that can be simple or very long paragraph text that looks like this.</p>
+                    <div class="code-frame"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="157" height="42"
+                            viewBox="0 0 157 42" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 9.25C0.5 4.83172 4.08172 1.25 8.5 1.25H148.5C152.918 1.25 156.5 4.83172 156.5 9.25V15.3325C155.209 15.8075 154.225 18.276 154.225 21.25C154.225 24.224 155.209 26.6925 156.5 27.1675V33.25C156.5 37.6683 152.918 41.25 148.5 41.25H8.5C4.08172 41.25 0.5 37.6683 0.5 33.25V27.1656C1.78874 26.6861 2.77022 24.2201 2.77022 21.25C2.77022 18.2799 1.78874 15.8139 0.5 15.3344V9.25Z"
+                                fill="white" />
+                            <path
+                                d="M156.5 15.3325L156.673 15.8018L157 15.6813V15.3325H156.5ZM156.5 27.1675H157V26.8187L156.673 26.6982L156.5 27.1675ZM0.5 27.1656L0.32563 26.697L0 26.8182V27.1656H0.5ZM0.5 15.3344H0V15.6818L0.32563 15.803L0.5 15.3344ZM8.5 0.75C3.80558 0.75 0 4.55558 0 9.25H1C1 5.10786 4.35786 1.75 8.5 1.75V0.75ZM148.5 0.75H8.5V1.75H148.5V0.75ZM157 9.25C157 4.55558 153.194 0.75 148.5 0.75V1.75C152.642 1.75 156 5.10787 156 9.25H157ZM157 15.3325V9.25H156V15.3325H157ZM154.725 21.25C154.725 19.8138 154.963 18.5162 155.344 17.5353C155.737 16.5255 156.234 15.9629 156.673 15.8018L156.327 14.8632C155.474 15.177 154.834 16.0862 154.412 17.173C153.979 18.2886 153.725 19.7123 153.725 21.25H154.725ZM156.673 26.6982C156.234 26.5371 155.737 25.9745 155.344 24.9647C154.963 23.9838 154.725 22.6862 154.725 21.25H153.725C153.725 22.7877 153.979 24.2114 154.412 25.327C154.834 26.4138 155.474 27.323 156.327 27.6368L156.673 26.6982ZM157 33.25V27.1675H156V33.25H157ZM148.5 41.75C153.194 41.75 157 37.9444 157 33.25H156C156 37.3921 152.642 40.75 148.5 40.75V41.75ZM8.5 41.75H148.5V40.75H8.5V41.75ZM0 33.25C0 37.9444 3.80558 41.75 8.5 41.75V40.75C4.35786 40.75 1 37.3921 1 33.25H0ZM0 27.1656V33.25H1V27.1656H0ZM2.27022 21.25C2.27022 22.6843 2.03262 23.9804 1.65224 24.9609C1.26074 25.9701 0.763807 26.534 0.32563 26.697L0.67437 27.6342C1.52493 27.3177 2.16311 26.4089 2.58454 25.3226C3.01709 24.2077 3.27022 22.7857 3.27022 21.25H2.27022ZM0.32563 15.803C0.763807 15.966 1.26074 16.5299 1.65224 17.5391C2.03262 18.5196 2.27022 19.8157 2.27022 21.25H3.27022C3.27022 19.7143 3.01709 18.2923 2.58454 17.1774C2.16311 16.0911 1.52493 15.1823 0.67437 14.8658L0.32563 15.803ZM0 9.25V15.3344H1V9.25H0Z"
+                                fill="#C5CFD1" />
+                            <text x="10" y="25" font-family="SF Pro" font-size="14" font-weight="700" fill="#333333">Code</text>
+                            <svg x="55" y="0" xmlns="http://www.w3.org/2000/svg" width="1" height="49" viewBox="0 0 1 41"
+                                fill="none">
+                                <path d="M0.5 0.25V40.25" stroke="#C5CFD1" stroke-dasharray="4 4" />
+                            </svg>
+                            <text x="60" y="25" font-family="SF Pro" font-size="14" font-weight="700"
+                                fill="#333333">PANDADEAL</text>
+                        </svg>
+                    </div>
+                    <p class="body-paragraph">Body text that can be simple or very long paragraph text that looks like this.</p>
+                </div>
+                <div class="message-footer">
+                    <button class="primary-button">Primary button</button>
+                </div>
+            </div>
+            <div class="slick-slide">
+                <div class="headline_container">
+                    <div class="headline-text">Header text</div>
+                </div>
+                <div class="message-image">
+                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/668e70f36eff9f005a67e9f7/original.png?1720611059" alt="Placeholder Image">
+                </div>
+                <div class="message-body">
+                    <p class="body-heading">Body text that can be simple or very long paragraph text that looks like this.</p>
+                    <div class="code-frame"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="157" height="42"
+                            viewBox="0 0 157 42" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 9.25C0.5 4.83172 4.08172 1.25 8.5 1.25H148.5C152.918 1.25 156.5 4.83172 156.5 9.25V15.3325C155.209 15.8075 154.225 18.276 154.225 21.25C154.225 24.224 155.209 26.6925 156.5 27.1675V33.25C156.5 37.6683 152.918 41.25 148.5 41.25H8.5C4.08172 41.25 0.5 37.6683 0.5 33.25V27.1656C1.78874 26.6861 2.77022 24.2201 2.77022 21.25C2.77022 18.2799 1.78874 15.8139 0.5 15.3344V9.25Z"
+                                fill="white" />
+                            <path
+                                d="M156.5 15.3325L156.673 15.8018L157 15.6813V15.3325H156.5ZM156.5 27.1675H157V26.8187L156.673 26.6982L156.5 27.1675ZM0.5 27.1656L0.32563 26.697L0 26.8182V27.1656H0.5ZM0.5 15.3344H0V15.6818L0.32563 15.803L0.5 15.3344ZM8.5 0.75C3.80558 0.75 0 4.55558 0 9.25H1C1 5.10786 4.35786 1.75 8.5 1.75V0.75ZM148.5 0.75H8.5V1.75H148.5V0.75ZM157 9.25C157 4.55558 153.194 0.75 148.5 0.75V1.75C152.642 1.75 156 5.10787 156 9.25H157ZM157 15.3325V9.25H156V15.3325H157ZM154.725 21.25C154.725 19.8138 154.963 18.5162 155.344 17.5353C155.737 16.5255 156.234 15.9629 156.673 15.8018L156.327 14.8632C155.474 15.177 154.834 16.0862 154.412 17.173C153.979 18.2886 153.725 19.7123 153.725 21.25H154.725ZM156.673 26.6982C156.234 26.5371 155.737 25.9745 155.344 24.9647C154.963 23.9838 154.725 22.6862 154.725 21.25H153.725C153.725 22.7877 153.979 24.2114 154.412 25.327C154.834 26.4138 155.474 27.323 156.327 27.6368L156.673 26.6982ZM157 33.25V27.1675H156V33.25H157ZM148.5 41.75C153.194 41.75 157 37.9444 157 33.25H156C156 37.3921 152.642 40.75 148.5 40.75V41.75ZM8.5 41.75H148.5V40.75H8.5V41.75ZM0 33.25C0 37.9444 3.80558 41.75 8.5 41.75V40.75C4.35786 40.75 1 37.3921 1 33.25H0ZM0 27.1656V33.25H1V27.1656H0ZM2.27022 21.25C2.27022 22.6843 2.03262 23.9804 1.65224 24.9609C1.26074 25.9701 0.763807 26.534 0.32563 26.697L0.67437 27.6342C1.52493 27.3177 2.16311 26.4089 2.58454 25.3226C3.01709 24.2077 3.27022 22.7857 3.27022 21.25H2.27022ZM0.32563 15.803C0.763807 15.966 1.26074 16.5299 1.65224 17.5391C2.03262 18.5196 2.27022 19.8157 2.27022 21.25H3.27022C3.27022 19.7143 3.01709 18.2923 2.58454 17.1774C2.16311 16.0911 1.52493 15.1823 0.67437 14.8658L0.32563 15.803ZM0 9.25V15.3344H1V9.25H0Z"
+                                fill="#C5CFD1" />
+                            <text x="10" y="25" font-family="SF Pro" font-size="14" font-weight="700" fill="#333333">Code</text>
+                            <svg x="55" y="0" xmlns="http://www.w3.org/2000/svg" width="1" height="49" viewBox="0 0 1 41"
+                                fill="none">
+                                <path d="M0.5 0.25V40.25" stroke="#C5CFD1" stroke-dasharray="4 4" />
+                            </svg>
+                            <text x="60" y="25" font-family="SF Pro" font-size="14" font-weight="700"
+                                fill="#333333">PANDADEAL</text>
+                        </svg>
+                    </div>
+                    <p class="body-paragraph">Body text that can be simple or very long paragraph text that looks like this.</p>
+                </div>
+                <div class="message-footer">
+                    <button class="primary-button">Primary button</button>
+                </div>
+            </div>
+        </div>
+
+      <div class="slick-controls">
+            <img class="slick-prev" src="https://braze-images.com/appboy/communication/assets/svg_assets/files/668e70f350547b005adc2de9/original.svg?1720611059" alt="">
+            <div class="slick-dots"></div>
+            <img class="slick-next" src="https://braze-images.com/appboy/communication/assets/svg_assets/files/668e70f3568e4d00591649b5/original.svg?1720611059" alt="">
+        </div> 
+    </div>
+
+    <!-- jQuery and Slick JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
