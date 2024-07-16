@@ -2,6 +2,7 @@
     --primary-color: #E21B70;
     --primary-neutral: #333333;
     --secondary-neutral: #707070;
+    --secondary-interaction: #39434D;
     --white: #ffffff;
     --neutral-inactive: #CACACA;
     --headline-font-size: 24px;
@@ -180,12 +181,61 @@
     letter-spacing: -0.15px;
     width: 100%;
   }
-  
+
+  .secondary-button {
+    background: var(--white);
+    color: var(    --primary-neutral);
+    height: 48px;
+    padding: 12px 16px;
+    border: 1px solid  var( --primary-neutral);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.15px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+
+}
+
+
+.primary-button__inline, .secondary-button__inline {
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  flex: 1;
+}
+
+.primary-button__inline {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+}
+
+.secondary-button__inline {
+  background: var(--white);
+  color: var(--primary-neutral);
+  border: 1px solid var(--primary-neutral);
+}
+
   .message-body p {
     margin: 0;
   
   }
   
+
   .slick-controls {
     position: relative;
     display: flex;
@@ -229,6 +279,7 @@
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
+  
   }
   
   .slick-dots li {
@@ -237,6 +288,8 @@
     padding: 0;
     cursor: pointer;
     transition: margin 0.3s ease;
+    color: var( --neutral-inactive);
+  
   }
   
   .slick-dots li button {
@@ -257,12 +310,94 @@
     content: '';
     display: block;
     height: 8px;
-    background-color: var(--neutral-inactive);
+    background-color: var(  --secondary-neutral);
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
   
-  .slick-dots li.slick-active button:before {
-    background-color: var(--secondary-neutral);
-  }
   
+
+  .code-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.code-frame__svg {
+    margin-right: 8px;
+}
+
+.code-frame__text {
+    display: flex;
+    align-items: center;
+    font-family: 'SF Pro Display', sans-serif;                                 
+    font-size: var(--code-font-size);
+    font-weight: 700;
+    color: var(--secondary-interaction);
+    letter-spacing: -0.15px;
+
+}
+
+.code-frame__text span:first-child {
+    margin-right: 8px;
+ 
+}
+
+.code-frame__voucher {
+    flex: 0 0 auto;
+    display: flex;
+    padding: 0;
+    height: 42px;
+    justify-content: center;
+}
+
+.code-frame__voucher-body {
+    display: flex;
+    position: relative;
+    background-clip: border-box;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.code-frame__voucher-text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(https://braze-images.com/appboy/communication/assets/svg_assets/files/66965616c27893005894b394/original.svg?1721128469);
+    background-repeat: repeat-x;
+}
+
+.code-frame__voucher-text span {
+    flex: 1 1 auto;
+}
+
+.code-frame__cap {
+    flex: 1 1 9px;
+    height: 42px;
+    width: 15px;
+}
+
+#left {
+    background-image: url(https://braze-images.com/appboy/communication/assets/svg_assets/files/6696561516effc00598ec7ae/original.svg?1721128469);
+}
+
+#right {
+    background-image: url(https://braze-images.com/appboy/communication/assets/svg_assets/files/669656161b758d0059cdac61/original.svg?1721128470);
+}
+
+.code-frame__text {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.code-frame__text:first-child {
+    padding-right: 8px;
+    border-right: dashed 1.5px #C5CFD1;
+}
+
+.code-frame__text:last-child {
+    padding-left: 8px;
+}
