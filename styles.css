@@ -303,6 +303,7 @@
     border: 0;
     outline: none;
     background: transparent;
+    border-radius: 4px;
     transition: width 0.3s ease;
   }
   
@@ -310,11 +311,12 @@
     content: '';
     display: block;
     height: 8px;
-    background-color: var(  --secondary-neutral);
     border-radius: 4px;
     transition: background-color 0.3s ease;
-  }
+}
+
   
+
   
 
   .code-frame {

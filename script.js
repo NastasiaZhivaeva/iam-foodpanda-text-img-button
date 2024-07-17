@@ -19,10 +19,15 @@ $(document).ready(function(){
       dots.each(function() {
           var button = $(this).find('button');
           if ($(this).hasClass('slick-active')) {
-              button.css('width', '48px');
+              button.css({
+                  'width': '48px',
+                  'background-color': 'var( --secondary-neutral)'
+              });
           } else {
-              button.css('width', '8px'),
-              button.css('background-color', '--primary-color');
+              button.css({
+                  'width': '8px',
+                  'background-color': 'var(  --neutral-inactive)'
+              });
           }
       });
 
@@ -33,10 +38,9 @@ $(document).ready(function(){
   $('.slick-container').on('swipe', function(event, slick, direction){
       adjustDotSpacing();
   });
-    $('.slick-prev, .slick-next').on('click', function() {
-        adjustDotSpacing();
-    });
-
+  $('.slick-prev, .slick-next').on('click', function() {
+      adjustDotSpacing();
+  });
 
   adjustDotSpacing();
 });
